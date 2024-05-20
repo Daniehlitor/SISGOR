@@ -1,0 +1,192 @@
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/CascadeStyleSheet.css to edit this template
+*/
+/* 
+    Created on : 19/05/2024, 11:56:58 a. m.
+    Author     : Daniel
+*/
+
+@import "roboto.css";
+@import "poppins.css";
+
+*{
+    font-family: "Poppins", sans-serif;
+}
+
+:root {
+    --gray: #f0f0f0;
+    --green: #79c783;
+    --black: #3a3a3a;
+}
+
+input[type=button], input[type=submit], button{
+    background: var(--green);
+    border: none;
+    padding: 8px 15px;
+    border-radius: 12px;
+    height: 36px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.content{
+    width: 800px;
+    min-height: 95vh;
+    background: var(--gray);
+    border-radius: 12px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.button-index {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-decoration: none !important;
+    color: var(--black);
+    background: #fff;
+    border-radius: 20px;
+    margin: 30px;
+    padding: 10px 50px;
+    width: 70%;
+    font-size: 25px;
+    font-weight: bold;
+}
+.button-index img{
+    width: 200px;
+}
+
+.button-index span {
+    font-size: 15px;
+    background: wheat;
+    width: 20px;
+    height: 20px;
+    padding: 5px;
+    border-radius: 50%;
+    position: absolute;
+    top: 15px;
+    right: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.item-pedido {
+    padding: 20px;
+    padding-bottom: 50px;
+    border-radius: 12px;
+    background: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 75%;
+    position: relative;
+    margin-top: 30px;
+}
+
+.item-pedido img {
+    width: 30%;
+}
+
+.item-pedido .button-entregar {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+}
+
+.content-clientes {
+    justify-content: start !important;
+}
+
+.pedido-info{
+    width: 60%;
+}
+
+.pedido-info h5,.pedido-info h2, .pedido-info p{
+    margin: 0px;
+}
+
+.pedido-info h5 {
+    margin-bottom: 10px;
+}
+.pedido-info p {
+    font-size: 13px;
+}
+
+.ingredients-add span, .ingredient-added {
+    display: inline-block;
+    padding: 5px 15px;
+    background: var(--green);
+    font-size: 12px;
+    border-radius: 15px;
+    margin-bottom: 10px;
+    margin-right: 5px;
+}
+
+form {
+    width: 60%;
+}
+
+.form-group {
+    width: 100%;
+    display: flex;
+    align-items: start;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+.form-group input, .form-group select, .form-group textarea {
+    width: 100%;
+    border: none;
+    padding: 5px 10px;
+    background: white;
+    border-radius: 10px;
+    display: inline-block;
+    margin-bottom: 20px;
+}
+
+.form-group-button {
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.form-group-button label {
+    width: 100%;
+}
+
+.form-group-button input {
+    width: 70%;
+}
+
+.form-group label {
+    font-weight: bold;
+    font-size: 15px;
+    margin: 10px;
+}
+
+.buttons-pedido{
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+}
+
+.buttons-pedido input, buttons-pedido button {
+    width: 35px;
+    height: 35px;
+}
+
+.buttons-pedido input{
+    border: none;
+    border-radius: 12px;
+    background: var(--gray);
+    text-align: center;
+    cursor: default;
+}
+
+
+

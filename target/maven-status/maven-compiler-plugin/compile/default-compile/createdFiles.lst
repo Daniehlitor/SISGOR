@@ -1,0 +1,5 @@
+com\compensar\sisgor\classes\Ingrediente.class
+com\compensar\sisgor\servlets\svRegistrarIngrediente.class
+com\compensar\sisgor\JakartaRestConfiguration.class
+com\compensar\sisgor\DBConnection.class
+com\compensar\sisgor\resources\JakartaEE8Resource.class
