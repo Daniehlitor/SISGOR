@@ -28,7 +28,6 @@
                         <% for (Ingrediente ingrediente : ingredientes) {%>
                         <option value="<%=ingrediente.getId()%>"><%=ingrediente.getNombre()%></option>
                         <% }%>
-
                     </select>
                 </div>
                 <div hidden id="new-ingredient">

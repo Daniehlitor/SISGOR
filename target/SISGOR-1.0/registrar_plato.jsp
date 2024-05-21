@@ -4,6 +4,8 @@
     Author     : Daniel
 --%>
 
+<%@page import="com.compensar.sisgor.classes.Ingrediente"%>
+<%@page import="java.util.ArrayList"%>
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
@@ -14,9 +16,10 @@
         <title>Registrar Platos</title>
     </head>
     <body>
+        <% ArrayList<Ingrediente> ingredientes = Ingrediente.getIngredientes(); %>
         <section class="content">
             <h2>Registrar Platos</h2>
-            <form>
+            <form action="svRegistrarPlato" method="POST">
                 <div class="form-group">
                     <label for="nombre">Nombre</label>
                     <input type="text" name="nombre" id="nombre">
@@ -29,8 +32,9 @@
                     <label for="ingrediente">Ingrediente</label>
                     <select id="ingrediente" name="ingrediente" value="0">
                         <option value="0">Selecciona un Ingrediente...</option>
-                        <option value="1">Tomate</option>
-                        <option value="2">Cebolla</option>
+                        <% for (Ingrediente ingrediente : ingredientes) {%>
+                        <option value="<%=ingrediente.getId()%>"><%=ingrediente.getNombre()%> - <%=ingrediente.getCantidad()%>gr Disponibles</option>
+                        <% }%>
                     </select>
                 </div>
                 <div class="form-group form-group-button">
@@ -39,6 +43,10 @@
                     <button type="button" id="add-ingredient">Agregar</button>
                 </div>
                 <div id="ingredients-add"></div>
+                <div class="form-group">
+                    <label for="precio">Precio.</label>
+                    <input type="number" name="precio" id="precio">
+                </div>
                 <input type="hidden" name="ingredientes">
                 <input type="button" onclick="onSubmit()" value="Aceptar"></input>
                 <input hidden id="submit-button" type="submit" value="Aceptar" />
@@ -49,10 +57,10 @@
     <script>
         $('#add-ingredient').on('click', () => {
             const id = $('#ingrediente').val();
-            if (id === 0)
+            if (id === 0 || id === '0')
                 return;
             const cantidad = $('#cantidad').val();
-            const nombre = $('#ingrediente option:selected').text();
+            const nombre = $('#ingrediente option:selected').text().split('-')[0];
             const ingredient_added = $('#ingredient-' + id).text();
 
             $('#ingrediente').val('0');
@@ -72,8 +80,8 @@
             var result = [];
             $('.ingredient-added').each((i, el) => {
                 const id = $(el).attr('id').split('-')[1];
-                const cantidad = $(el).text().split(' ')[1].replace('gr', '');
-                result.push(id + '-' + cantidad);
+                const cantidad = $(el).text().trim().replace(/\s+/g, ' ').split(' ');
+                result.push(id + '-' + cantidad[cantidad.length - 1].replace('gr', ''));
             });
             $('input[name="ingredientes"]').val(result.join(','));
             $('#submit-button').click();

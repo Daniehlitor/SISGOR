@@ -1,5 +1,10 @@
-C:\Users\Daniel\Documents\NetBeansProjects\SISGOR\src\main\java\com\compensar\sisgor\resources\JakartaEE8Resource.java
-C:\Users\Daniel\Documents\NetBeansProjects\SISGOR\src\main\java\com\compensar\sisgor\JakartaRestConfiguration.java
-C:\Users\Daniel\Documents\NetBeansProjects\SISGOR\src\main\java\com\compensar\sisgor\classes\Ingrediente.java
-C:\Users\Daniel\Documents\NetBeansProjects\SISGOR\src\main\java\com\compensar\sisgor\DBConnection.java
-C:\Users\Daniel\Documents\NetBeansProjects\SISGOR\src\main\java\com\compensar\sisgor\servlets\svRegistrarIngrediente.java
+/Users/Daniel/Desktop/SISGOR/src/main/java/com/compensar/sisgor/classes/Ingrediente.java
+/Users/Daniel/Desktop/SISGOR/src/main/java/com/compensar/sisgor/resources/JakartaEE8Resource.java
+/Users/Daniel/Desktop/SISGOR/src/main/java/com/compensar/sisgor/servlets/svRegistrarPlato.java
+/Users/Daniel/Desktop/SISGOR/src/main/java/com/compensar/sisgor/classes/Usuario.java
+/Users/Daniel/Desktop/SISGOR/src/main/java/com/compensar/sisgor/classes/Plato.java
+/Users/Daniel/Desktop/SISGOR/src/main/java/com/compensar/sisgor/servlets/svRegistrarUsuario.java
+/Users/Daniel/Desktop/SISGOR/src/main/java/com/compensar/sisgor/JakartaRestConfiguration.java
+/Users/Daniel/Desktop/SISGOR/src/main/java/com/compensar/sisgor/servlets/svRegistrarIngrediente.java
+/Users/Daniel/Desktop/SISGOR/src/main/java/com/compensar/sisgor/servlets/svRegistrarPedido.java
+/Users/Daniel/Desktop/SISGOR/src/main/java/com/compensar/sisgor/DBConnection.java

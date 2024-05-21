@@ -22,11 +22,11 @@
                 <img src="./assets/platos.png" alt="alt"/>
                 Registrar Platos
             </a>
-            <a href="pedidos_activos.jsp" class="button-index">
+<!--            <a href="pedidos_activos.jsp" class="button-index">
                 <span>1</span>
                 <img src="./assets/pedidos.png" alt="alt"/>
                 Pedidos Activos
-            </a>
+            </a>-->
         </section>
     </body>
 </html>

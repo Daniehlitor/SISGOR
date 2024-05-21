@@ -15,14 +15,14 @@
     <body>
         <section class="content">
             <h2>¡Bienvenido!</h2>
-            <form action="pedido_cliente.jsp">
+            <form action="svRegistrarUsuario" method="POST">
                 <div class="form-group">
                     <label for="nombre">Nombre</label>
                     <input placeholder="Ingresa tu nombre" type="text" name="nombre" id="nombre">
                 </div>
                 <div class="form-group">
-                    <label for="descripcion"># de Identificación</label>
-                    <input placeholder="Ingresa tu numero de identificación" type="text" name="nombre" id="nombre">
+                    <label for="identificacion"># de Identificación</label>
+                    <input placeholder="Ingresa tu numero de identificación" type="text" name="identificacion" id="identificacion">
                 </div>
                 <input type="submit" value='¡Comenzar a Pedir!' />
             </form>

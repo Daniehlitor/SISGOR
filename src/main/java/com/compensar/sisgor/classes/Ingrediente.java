@@ -16,10 +16,17 @@ import java.util.ArrayList;
 public class Ingrediente {
 
     private int id;
-    private String nombre;
+    private final String nombre;
     private String descripcion;
     private double cantidad;
     private double precio;
+
+    public Ingrediente(String nombre, double cantidad) {
+        this.nombre = nombre;
+        this.cantidad = cantidad;
+    }
+    
+    
 
     public Ingrediente(int id, String nombre, String descripcion, double cantidad, double precio) {
         this.id = id;
